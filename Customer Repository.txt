@@ -1,0 +1,47 @@
+Customer Repository
+
+Feature: Multiple cases checked in Save
+
+ 1-Scenario: Name Format
+      Given: name is null
+       When: name object null
+       Then: Show the "Name is Blank"
+      Given: enter the special character
+       When: name object is not match
+       Then: name is invalid
+      Given: enter the numaric value
+       When: name object is not match 
+       Then: Name is invalid
+
+2-Scenario: Moblie Format
+     Given: Moblie is null
+      When: Moblie object null
+      Then: Show the "Moblie is Blank"
+     Given: enter the special character
+      When: Moblie object is not match 
+      Then: Mobile is invalid
+     Given: mobile no.is less then ten digit
+      When: Moblic object is not match
+      Then: moblie is invalid
+
+3-Scenario: Wallet Format
+     Given: Wallet is null
+      When: Wallet is blank
+      Then: Show the "Wallet is empty"
+     
+
+Feature : Checked in FindbyMobile
+ 
+1-Scenario: FindbyMobile Format
+     Given: Moblie no.is null
+      When: Moblie object null
+      Then: Show the "Moblie no.is Blank"
+     Given: enter random numaric number
+      When: Moblie object is not match 
+      Then: Mobile is invalid
+     Given: mobile no.is less then ten digit
+      When: Moblic object is not match
+      Then: moblie is invalid
+
+ 
+ 
